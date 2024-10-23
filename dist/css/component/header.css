@@ -108,27 +108,3 @@
   width: 727px;
   height: auto;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  color: #3D3629;
-  font-family: "DM Sans";
-}
-
-.section {
-  width: 100%;
-}
-
-.container {
-  width: 100%;
-  max-width: 1392px;
-}

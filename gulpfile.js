@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 const bsync = require('browser-sync').create(); // BrowserSync
-const clean = require('gulp-clean'); // Tambahkan ini untuk membersihkan folder
+const clean = require('gulp-clean'); // Untuk membersihkan folder
 
 // Nama task untuk partial
 const partialTaskName = 'part'; // Ganti nama ini sesuai keinginan
@@ -25,7 +25,7 @@ gulp.task('pug', function () {
 gulp.task(partialTaskName, function () {
   return gulp.src('src/part/**/*.pug') // Mengompilasi Pug dari folder partial
     .pipe(pug({ pretty: true }))
-    .pipe(gulp.dest('dist/parts')) // Simpan hasil kompilasi di folder dist/partials
+    .pipe(gulp.dest('dist/parts')) // Simpan hasil kompilasi di folder dist/parts
     .pipe(bsync.stream()); // Reload browser setelah kompilasi Pug
 });
 
@@ -37,14 +37,37 @@ gulp.task('sass', function () {
     .pipe(bsync.stream()); // Reload browser setelah kompilasi SASS
 });
 
-// Task untuk membangun semua
-gulp.task('build', gulp.series('clean', gulp.parallel('pug', partialTaskName, 'sass')));
+// Task untuk menyalin file assets ke folder dist
+gulp.task('copy-assets', function () {
+  return gulp.src('src/assets/**/*', { encoding: false }) // Set encoding to false untuk binary files
+    .pipe(gulp.dest('dist/assets'))
+    .on('end', () => {
+      console.log('Assets copied to dist/assets');
+      const fs = require('fs');
+      fs.readdirSync('dist/assets').forEach(file => {
+        console.log('Copied:', file);
+      });
+    })
+    .pipe(bsync.stream());
+});
 
-// Task untuk memantau perubahan file Pug dan SASS
+// Task untuk menyalin file JavaScript ke folder dist
+gulp.task('copy-js', function () {
+  return gulp.src('src/js/**/*.js', { encoding: false }) // Set encoding to false untuk binary files jika diperlukan
+    .pipe(gulp.dest('dist/js')) // Menyalin ke folder dist/js
+    .pipe(bsync.stream()); // Reload browser setelah penyalinan
+});
+
+// Task untuk membangun semua
+gulp.task('build', gulp.series('clean', gulp.parallel('pug', partialTaskName, 'sass', 'copy-assets', 'copy-js')));
+
+// Task untuk memantau perubahan file
 gulp.task('watch', function () {
   gulp.watch('src/pages/**/*.pug', gulp.series('build')); // Pantau perubahan pada file Pug
   gulp.watch('src/part/**/*.pug', gulp.series('build')); // Pantau perubahan pada file Pug partial
-  gulp.watch('src/sass/**/*.scss', gulp.series('build')); // Pantau perubahan pada file SASS
+  gulp.watch('src/sass/**/*.sass', gulp.series('build')); // Pantau perubahan pada file SASS
+  gulp.watch('src/assets/**/*', gulp.series('copy-assets')); // Pantau perubahan pada file assets
+  gulp.watch('src/js/**/*.js', gulp.series('copy-js')); // Pantau perubahan pada file JavaScript
 });
 
 // Task untuk menjalankan BrowserSync
@@ -58,7 +81,9 @@ gulp.task('sync', function () {
   // Memanggil task watch setelah BrowserSync dijalankan
   gulp.watch('src/pages/**/*.pug', gulp.series('build', reload)); 
   gulp.watch('src/part/**/*.pug', gulp.series('build', reload)); 
-  gulp.watch('src/sass/**/*.scss', gulp.series('build', reload)); 
+  gulp.watch('src/sass/**/*.sass', gulp.series('build', reload)); 
+  gulp.watch('src/assets/**/*', gulp.series('copy-assets', reload)); // Pantau perubahan pada assets
+  gulp.watch('src/js/**/*.js', gulp.series('copy-js', reload)); // Pantau perubahan pada file JavaScript
 });
 
 // Task untuk melakukan reload browser

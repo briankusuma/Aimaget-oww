@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gulp Pug Example with SASS</title>
+    <title>Aimaget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
   </head>
   <body>
-    <h1>Hello from header index!</h1>
-    <p>Hello</p>
-    <p>Hello</p>
-    <h1>Hello from footer</h1>
+    <div class="section sec-header">
+      <div class="container con-header">
+        <div class="header-content">
+          <div class="content">
+            <div class="content-span-button"><span>In a nutshell</span></div>
+            <h1 class="content-title"> <span class="content-title-inner">Aimaget is <img src="assets/icon-spark.svg" alt="icon"></span><span class="content-title-inner yellow">Revolutionizing</span><span class="content-title-inner">The stock image</span><span class="content-title-inner">Industry<img class="span-img-people" src="assets/img-people.png" alt="images"></span><span class="content-title-inner">With Generative AI</span></h1>
+            <div class="search-container">
+              <input class="search-input" type="text" placeholder="Search...">
+              <button class="search-button"><img class="icon-search" src="assets/icon-search.svg" alt="icon-search"></button>
+            </div>
+            <p class="content-description">Our platform offers a continuously growing collection of AI-created images designed to fulfill the varied and changing requirements of artists, advertisers, and companies worldwide. If you need original visuals for a project or ideas for your next marketing strategy, our AI-powered collection provides limitless options at your disposal.</p>
+          </div>
+          <div class="content"><img class="content-img" src="assets/image-header.webp" alt="header-img"></div>
+        </div>
+      </div>
+    </div>
+    <!--include ../part/footer.pug-->
   </body>
 </html>
