@@ -1,3 +1,207 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.grid-span-1 {
+  grid-column: span 1;
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.grid-span-3 {
+  grid-column: span 3;
+}
+
+.grid-span-4 {
+  grid-column: span 4;
+}
+
+.grid-span-5 {
+  grid-column: span 5;
+}
+
+.grid-span-6 {
+  grid-column: span 6;
+}
+
+.grid-span-7 {
+  grid-column: span 7;
+}
+
+.grid-span-8 {
+  grid-column: span 8;
+}
+
+.grid-span-9 {
+  grid-column: span 9;
+}
+
+.grid-span-10 {
+  grid-column: span 10;
+}
+
+.grid-span-11 {
+  grid-column: span 11;
+}
+
+.grid-span-12 {
+  grid-column: span 12;
+}
+
+.sec-join-us {
+  background-color: #F7F8FB;
+}
+.sec-join-us .con-join-us {
+  margin-inline: 24px;
+  padding: 20px 0;
+}
+.sec-join-us .con-join-us .join-us-content {
+  text-align: center;
+  padding: 72px 178px;
+  border-radius: 24px;
+  background: #2B65F4;
+}
+.sec-join-us .con-join-us .join-us-content span {
+  color: white;
+  font-size: 1rem;
+  line-height: 156%;
+  text-transform: uppercase;
+}
+.sec-join-us .con-join-us .join-us-content h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 135%;
+  text-transform: capitalize;
+  letter-spacing: -0.8px;
+  margin-bottom: 1rem;
+  margin-top: 12px;
+}
+.sec-join-us .con-join-us .join-us-content p {
+  color: white;
+  font-size: 1rem;
+  line-height: 156%;
+  letter-spacing: 0.36px;
+  margin-bottom: 32px;
+  padding: 0 53px;
+}
+.sec-join-us .con-join-us .join-us-content .btn {
+  display: inline-block;
+  border-radius: 56px;
+  padding: 1rem 2.5rem;
+}
+.sec-join-us .con-join-us .join-us-content .btn-white {
+  background: white;
+  color: #2B65F4;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.sec-core-value {
+  background-color: #F7F8FB;
+}
+.sec-core-value .con-core-value {
+  margin-inline: 24px;
+  padding: 20px 0;
+}
+.sec-core-value .con-core-value .core-value-content {
+  padding: 112px 106px;
+  border-radius: 24px;
+  background: var(--Linear, linear-gradient(180deg, #DDEBF8 0%, #FFF 100%));
+  text-align: center;
+}
+.sec-core-value .con-core-value .core-value-content span {
+  color: #F68325;
+  font-size: 1rem;
+  line-height: 156%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.sec-core-value .con-core-value .core-value-content h3 {
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 135%;
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+  margin-top: 12px;
+  margin-bottom: 72px;
+  padding: 0 180px;
+}
+.sec-core-value .con-core-value .core-value-content ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec-core-value .con-core-value .core-value-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sec-core-value .con-core-value .core-value-content ul li span {
+  color: #3D3629;
+}
+
+.sec-footer {
+  background-color: #F7F8FB;
+}
+.sec-footer .con-footer {
+  margin-inline: 24px;
+  padding: 20px 0;
+}
+.sec-footer .con-footer .footer-content {
+  padding: 48px 40px 20px 40px;
+  border-radius: 24px;
+  background: var(--Linear, linear-gradient(180deg, #DDEBF8 0%, #FFF 100%));
+}
+.sec-footer .con-footer .footer-content .footer-top {
+  padding-bottom: 120px;
+}
+.sec-footer .con-footer .footer-content .footer-top-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.sec-footer .con-footer .footer-content .footer-top-right .footer-widget {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sec-footer .con-footer .footer-content .footer-top-right .footer-widget li a {
+  color: black;
+}
+.sec-footer .con-footer .footer-content .footer-top-right .footer-widget li a:hover {
+  color: #2B65F4;
+}
+.sec-footer .con-footer .footer-content .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(102, 102, 102, 0.1);
+  padding-top: 1rem;
+}
+.sec-footer .con-footer .footer-content .footer-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.sec-footer .con-footer .footer-content .footer-bottom-right .footer-sosmed {
+  border: 1px solid rgba(140, 140, 140, 0.33);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
 .sec-header .con-header {
   margin-inline: 24px;
   padding-top: 24px;
