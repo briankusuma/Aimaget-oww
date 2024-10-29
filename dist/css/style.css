@@ -461,6 +461,215 @@
   transform: rotate(180deg);
 }
 
+.sec-curated {
+  background-color: #F7F8FB;
+}
+.sec-curated .con-curated {
+  border-radius: 24px;
+  background: #FFF;
+  padding-block: 110px;
+}
+.sec-curated .con-curated .curated-content-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sec-curated .con-curated .curated-content-title span {
+  color: #F68325;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.sec-curated .con-curated .curated-content-title h1 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+  max-width: 600px;
+  width: 100%;
+  margin: 12px 0 16px 0;
+}
+.sec-curated .con-curated .curated-content-title p {
+  color: #3D3629;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.32px;
+  max-width: 930px;
+  width: 100%;
+}
+.sec-curated .con-curated .curated-content-image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+}
+.sec-curated .con-curated .curated-content-image .image-curated {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.sec-mind {
+  background-color: #F7F8FB;
+  padding-block: 24px;
+}
+.sec-mind .con-mind {
+  border-radius: 24px;
+  background: #FFF;
+  padding-inline: 55px;
+}
+.sec-mind .con-mind .mind-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.sec-mind .con-mind .mind-content-title {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sec-mind .con-mind .mind-content-title span {
+  color: #F68325;
+  text-align: start;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.sec-mind .con-mind .mind-content-title h1 {
+  color: #000;
+  text-align: start;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+  max-width: 400px;
+  width: 100%;
+  margin: 12px 0 20px 0;
+}
+.sec-mind .con-mind .mind-content-title p {
+  color: #3D3629;
+  text-align: start;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.32px;
+  max-width: 488px;
+  width: 100%;
+}
+.sec-mind .con-mind .mind-content-image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.sec-mind .con-mind .mind-content-image .image-mind {
+  width: 100%;
+  max-width: 663px;
+}
+
+.sec-vision {
+  background-color: #F7F8FB;
+}
+.sec-vision .con-vision {
+  border-radius: 24px;
+  background: #FFF;
+  padding-block: 88px;
+  padding-inline: 40px;
+}
+.sec-vision .con-vision .vision-content-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sec-vision .con-vision .vision-content-title span {
+  color: #F68325;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.sec-vision .con-vision .vision-content-title h1 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+  max-width: 1080px;
+  width: 100%;
+  margin: 12px 0 16px 0;
+}
+.sec-vision .con-vision .vision-content-image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+}
+.sec-vision .con-vision .vision-content-image .image-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.sec-vision .con-vision .vision-content-image .image-layout-img img {
+  width: 614px;
+  max-width: 614px;
+}
+.sec-vision .con-vision .vision-content-image .image-layout-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 583px;
+  width: 100%;
+}
+.sec-vision .con-vision .vision-content-image .image-layout-text h1 {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 156%;
+  letter-spacing: -0.44px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  border-left: 1px solid black;
+  padding-left: 45px;
+}
+.sec-vision .con-vision .vision-content-image .image-layout-text span {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.32px;
+  margin-block: 30px;
+  padding-left: 45px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
