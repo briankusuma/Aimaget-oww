@@ -1,4 +1,5 @@
 console.log("Its live!!");
+// slider logic
 
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
@@ -19,3 +20,25 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: '.swiper-wrapper-button-prev',
     },
 });
+
+// faq logic
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faq-question').forEach((question) => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector('.icon');
+            
+            if (answer.classList.contains('open')) {
+            answer.classList.remove('open');
+            icon.textContent = '+';
+            } else {
+            document.querySelectorAll('.faq-answer').forEach((otherAnswer) => {
+                otherAnswer.classList.remove('open');
+                otherAnswer.previousElementSibling.querySelector('.icon').textContent = '+';
+            });
+            answer.classList.add('open');
+            icon.textContent = '-';
+            }
+        });
+        });
+    });
