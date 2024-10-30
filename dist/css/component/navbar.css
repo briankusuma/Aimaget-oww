@@ -1,0 +1,40 @@
+.sec-navbar .con-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.sec-navbar .con-navbar .brand-navbar a img {
+  width: 193px;
+}
+.sec-navbar .con-navbar .menus-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 96px;
+}
+.sec-navbar .con-navbar .menus-navbar-menus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec-navbar .con-navbar .menus-navbar-menus a.link-menu {
+  color: #3D3629;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  padding-inline: 33px;
+}
+.sec-navbar .con-navbar .menus-navbar a.button-navbar {
+  border-radius: 56px;
+  background: #000;
+  display: flex;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

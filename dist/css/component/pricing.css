@@ -1,0 +1,192 @@
+.sec-pricing {
+  background-color: #F7F8FB;
+}
+.sec-pricing .con-pricing {
+  border-radius: 24px;
+  background: #FFF;
+  padding-block: 88px;
+  padding-inline: 40px;
+  margin-bottom: 24px;
+}
+.sec-pricing .con-pricing .pricing-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.sec-pricing .con-pricing .pricing-content-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sec-pricing .con-pricing .pricing-content-title span {
+  color: #F68325;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.sec-pricing .con-pricing .pricing-content-title h1 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+  margin: 12px 0 16px 0;
+}
+.sec-pricing .con-pricing .pricing-content-title p {
+  color: #3D3629;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.32px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .tabs {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #F7F8FB;
+  width: 100%;
+  max-width: 368px;
+  border-radius: 90px;
+  gap: 8px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .tabs .tab {
+  flex: 1;
+  text-align: center;
+  padding: 16px 36px;
+  color: black;
+  border-radius: 90px;
+  background-color: #F7F8FB;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .tabs .tab.active {
+  border-radius: 32px;
+  background: #FFF;
+  box-shadow: 1px 1.5px 6px 0px rgba(0, 0, 0, 0.12);
+  color: #2B65F4;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container {
+  margin-top: 20px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .content {
+  display: none;
+  transition: opacity 0.3s ease;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .content.active {
+  display: flex;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card {
+  background: #F7F8FB;
+  padding: 36px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  border-radius: 24px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card span {
+  color: #F68325;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card h3 {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  margin-top: 24px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 40px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list span {
+  color: #3D3629;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: 0.32px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 90px;
+  background: #EEF0F6;
+  padding: 5px;
+  margin: 30px 0 20px 0;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits-opsi {
+  padding: 16px 36px;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits-opsi span {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits .active {
+  border-radius: 32px;
+  background: #FFF;
+  box-shadow: 1px 1.5px 6px 0px rgba(0, 0, 0, 0.12);
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits .active span {
+  color: #2B65F4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-subscribe {
+  border-radius: 56px;
+  background: #FFF;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-subscribe span {
+  color: #2B65F4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
