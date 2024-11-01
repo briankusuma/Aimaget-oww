@@ -45,7 +45,7 @@
                     flex-direction: row
                     &-img
                         img
-                            width: 614px
+                            width: 100%
                             max-width: 614px
                     &-text
                         display: flex
@@ -74,3 +74,16 @@
                             letter-spacing: 0.32px
                             margin-block: 30px
                             padding-left: 45px
+@media only screen and (max-width: 600px)
+    .image-layout
+        flex-direction: column!important
+    .image-layout-text
+        h1, span
+            padding-left: 14px!important
+            margin-block: 10px!important
+    .con-vision
+        padding: 40px 20px!important
+    .vision-content
+            &-title
+                h1
+                    font-size: 32px!important

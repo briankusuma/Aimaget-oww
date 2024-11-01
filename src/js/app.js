@@ -1,6 +1,12 @@
 console.log("Its live!!");
-// slider logic
 
+// mneus mobile
+document.querySelector('.navbar-humburger').addEventListener('click', () => {
+    document.querySelector('.menus-navbar').classList.toggle('open');
+});
+
+
+// slider logic
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -19,6 +25,24 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: '.swiper-wrapper-button-next',
         prevEl: '.swiper-wrapper-button-prev',
     },
+    breakpoints: {
+        // Ketika layar lebih kecil dari 600px, tampilkan 3 slide
+        600: {
+            slidesPerView: 5,
+            centeredSlides: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 500,
+                depth: 500,
+                modifier: 1,
+                slideShadows: false,
+            },
+        },
+        // Ketika layar lebih kecil dari 480px, tampilkan 1 slide
+        480: {
+            slidesPerView: 1,
+        },
+    },
 });
 
 // faq logic
@@ -28,15 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const answer = question.nextElementSibling;
             const icon = question.querySelector('.icon');
             
-            if (answer.classList.contains('open')) {
-            answer.classList.remove('open');
+            if (answer.classList.contains('fold')) {
+            answer.classList.remove('fold');
             icon.textContent = '+';
             } else {
             document.querySelectorAll('.faq-answer').forEach((otherAnswer) => {
-                otherAnswer.classList.remove('open');
+                otherAnswer.classList.remove('fold');
                 otherAnswer.previousElementSibling.querySelector('.icon').textContent = '+';
             });
-            answer.classList.add('open');
+            answer.classList.add('fold');
             icon.textContent = '-';
             }
         });

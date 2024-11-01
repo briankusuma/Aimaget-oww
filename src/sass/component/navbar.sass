@@ -26,7 +26,9 @@
                     font-style: normal
                     font-weight: 500
                     line-height: 100%
-                    padding-inline: 33px 
+                    padding-inline: 33px
+                    &:hover
+                        color: #2B65F4
             a.button-navbar
                 border-radius: 56px
                 background: #000
@@ -35,3 +37,37 @@
                 justify-content: center
                 align-items: center
                 color: white
+                &:hover
+                    color: #000
+                    background: #fff
+                    box-shadow: 0 0 0 1px #000
+        .navbar-humburger
+                display: none
+
+
+@media only screen and (max-width: 600px)
+    .con-navbar
+        padding-inline: 10px
+    .menus-navbar
+        display: none!important
+    .navbar-humburger
+        display: flex!important
+        cursor: pointer
+        position: relative
+        z-index: 2
+
+    .open
+        display: flex!important
+        flex-direction: column!important
+        justify-content: flex-start!important
+        gap: 15px
+        position: fixed
+        top: 0
+        background-color: #fff
+        padding: 15px
+        width: 100%!important
+        height: 100%!important
+        z-index: 2
+        .menus-navbar-menus
+            display: flex!important
+            flex-direction: column!important

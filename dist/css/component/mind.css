@@ -62,3 +62,28 @@
   width: 100%;
   max-width: 663px;
 }
+
+@media only screen and (max-width: 600px) {
+  .con-mind {
+    padding: 32px 14px !important;
+  }
+  .mind-content {
+    flex-direction: column !important;
+  }
+  .mind-content-title {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center !important;
+    margin-bottom: 24px;
+  }
+  .mind-content-title span {
+    text-align: center !important;
+  }
+  .mind-content-title h1 {
+    text-align: center !important;
+  }
+  .mind-content-title p {
+    text-align: center !important;
+  }
+}

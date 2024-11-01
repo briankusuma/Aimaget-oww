@@ -101,3 +101,25 @@
 .swiper-wrapper-button-prev img {
   transform: rotate(180deg);
 }
+
+@media only screen and (max-width: 600px) {
+  .swiper-slide {
+    height: 300px !important;
+    width: 180px !important;
+  }
+  .swiper-slide-next img {
+    margin-left: unset !important;
+  }
+  .swiper-slide-prev img {
+    margin-left: unset !important;
+  }
+  .swiper-slide-next img,
+  .swiper-slide-prev img {
+    transform: scale(1) !important;
+    transition: all 200ms ease;
+  }
+  .swiper-slide-active img {
+    transform: scale(1) !important;
+    transition: all 200ms ease;
+  }
+}

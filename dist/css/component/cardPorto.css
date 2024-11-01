@@ -41,3 +41,18 @@
   line-height: 156%;
   letter-spacing: 0.32px;
 }
+
+@media only screen and (max-width: 600px) {
+  .frame-porto {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 10px;
+  }
+  .card-porto-head h1 {
+    font-size: 40px !important;
+  }
+  .card-porto-body {
+    font-size: 14px !important;
+  }
+}

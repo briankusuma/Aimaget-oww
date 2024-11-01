@@ -43,4 +43,19 @@
                         align-items: center
                         justify-content: center
                         border-radius: 100px
-            
+@media only screen and (max-width: 600px)
+    .footer-top
+        display: flex!important
+        flex-direction: column!important
+    .footer-top-right
+        flex-wrap: wrap!important
+        gap: 45px!important
+    .footer-widget
+        align-items: flex-start!important
+    .footer-bottom
+        flex-direction: column-reverse!important
+        gap: 14px!important
+        &-left
+            p
+                font-size: 14px!important
+                text-align: center!important

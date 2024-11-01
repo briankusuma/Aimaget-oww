@@ -190,3 +190,12 @@
   font-weight: 500;
   line-height: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  .content-container .content {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}

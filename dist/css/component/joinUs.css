@@ -46,3 +46,15 @@
   font-weight: 500;
   line-height: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  .sec-join-us .con-join-us .join-us-content {
+    padding: 38px 12px !important;
+  }
+  .sec-join-us .con-join-us .join-us-content h3 {
+    font-size: 32px !important;
+  }
+  .sec-join-us .con-join-us .join-us-content p {
+    padding: 0 0px !important;
+  }
+}
