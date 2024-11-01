@@ -29,14 +29,7 @@ var swiper = new Swiper(".mySwiper", {
         // Ketika layar lebih kecil dari 600px, tampilkan 3 slide
         600: {
             slidesPerView: 5,
-            centeredSlides: true,
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 500,
-                depth: 500,
-                modifier: 1,
-                slideShadows: false,
-            },
+            centeredSlides: true
         },
         // Ketika layar lebih kecil dari 480px, tampilkan 1 slide
         480: {
