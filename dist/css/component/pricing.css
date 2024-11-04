@@ -219,6 +219,9 @@
     gap: 12px !important;
     margin-top: 32px !important;
   }
+  .card {
+    padding: 24px 14px !important;
+  }
   .card h3 {
     margin-top: 12px !important;
   }
