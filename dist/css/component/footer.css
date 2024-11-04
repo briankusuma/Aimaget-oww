@@ -73,4 +73,7 @@
     font-size: 14px !important;
     text-align: center !important;
   }
+  .con-footer {
+    margin-inline: 0px !important;
+  }
 }

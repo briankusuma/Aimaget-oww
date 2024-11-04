@@ -249,6 +249,9 @@
     font-size: 14px !important;
     text-align: center !important;
   }
+  .con-footer {
+    margin-inline: 0px !important;
+  }
 }
 .sec-header .con-header {
   margin-inline: 24px;
@@ -1182,6 +1185,9 @@
   }
   .card h3 {
     margin-top: 12px !important;
+  }
+  .con-pricing {
+    padding-block: 32px !important;
   }
 }
 .sec-choose {
