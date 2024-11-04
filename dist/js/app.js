@@ -3,17 +3,18 @@ console.log("Its live!!");
 // mneus mobile
 document.querySelector('.navbar-humburger').addEventListener('click', () => {
     document.querySelector('.menus-navbar').classList.toggle('open');
+    document.querySelector('.navbar-humburger').classList.toggle('close');
+    
 });
-
 
 // slider logic
 var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 5,
+    // slidesPerView: 5,
     autoplay: true,
     loop: true,
+    effect: "coverflow",
     coverflowEffect: {
         rotate: 50,
         stretch: -100,
@@ -26,14 +27,14 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: '.swiper-wrapper-button-prev',
     },
     breakpoints: {
-        // Ketika layar lebih kecil dari 600px, tampilkan 3 slide
-        600: {
-            slidesPerView: 5,
-            centeredSlides: true
+        // When window width is >= 640px (mobile view)
+        414: {
+            slidesPerView: 3, // Show 3 slides per view on mobile
+            
         },
-        // Ketika layar lebih kecil dari 480px, tampilkan 1 slide
-        480: {
-            slidesPerView: 1,
+        // When window width is >= 1024px (tablet or desktop)
+        1024: {
+            slidesPerView: 5,
         },
     },
 });
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         });
     });
+
 // tabs logic
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab');
@@ -74,4 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
             target.classList.add('active');
         });
     });
-});    
+});
+
+AOS.init();

@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="section sec-navbar">
@@ -19,9 +21,16 @@
         <div class="menus-navbar">
           <div class="menus-navbar-menus"><a class="link-menu" href="/" target="_blank">Home</a><a class="link-menu" href="/" target="_blank">Service</a><a class="link-menu" href="/" target="_blank">About</a><a class="link-menu" href="/" target="_blank">Product</a></div><a class="button-navbar" href="/" target="_blank">Contact Us</a>
         </div>
-        <div class="navbar-humburger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <div class="navbar-humburger">
+          <div class="humb-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <path d="M4 7C4 6.73478 4.10536 6.48043 4.29289 6.29289C4.48043 6.10536 4.73478 6 5 6H19C19.2652 6 19.5196 6.10536 19.7071 6.29289C19.8946 6.48043 20 6.73478 20 7C20 7.26522 19.8946 7.51957 19.7071 7.70711C19.5196 7.89464 19.2652 8 19 8H5C4.73478 8 4.48043 7.89464 4.29289 7.70711C4.10536 7.51957 4 7.26522 4 7ZM4 12C4 11.7348 4.10536 11.4804 4.29289 11.2929C4.48043 11.1054 4.73478 11 5 11H19C19.2652 11 19.5196 11.1054 19.7071 11.2929C19.8946 11.4804 20 11.7348 20 12C20 12.2652 19.8946 12.5196 19.7071 12.7071C19.5196 12.8946 19.2652 13 19 13H5C4.73478 13 4.48043 12.8946 4.29289 12.7071C4.10536 12.5196 4 12.2652 4 12ZM4 17C4 16.7348 4.10536 16.4804 4.29289 16.2929C4.48043 16.1054 4.73478 16 5 16H19C19.2652 16 19.5196 16.1054 19.7071 16.2929C19.8946 16.4804 20 16.7348 20 17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H5C4.73478 18 4.48043 17.8946 4.29289 17.7071C4.10536 17.5196 4 17.2652 4 17Z" fill="black"/>
 </svg>
+          </div>
+          <div class="cross-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M19 19L5 5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 5L5 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </div>
         </div>
       </div>
     </div>
@@ -29,33 +38,33 @@
       <div class="container con-header">
         <div class="header-content">
           <div class="content">
-            <div class="content-span-button"><span>In a nutshell</span></div>
-            <h1 class="content-title"> <span class="content-title-inner">Aimaget is <img src="assets/icon-spark.svg" alt="icon"></span><span class="content-title-inner yellow">Revolutionizing</span><span class="content-title-inner">The stock image</span><span class="content-title-inner">Industry<img class="span-img-people" src="assets/img-people.png" alt="images"></span><span class="content-title-inner">With Generative AI</span></h1>
-            <div class="search-container">
+            <div class="content-span-button" data-aos="fade-up" data-aos-duration="800" data-aos-once="true"><span>In a nutshell</span></div>
+            <h1 class="content-title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"> <span class="content-title-inner">Aimaget is <img class="span-img-spark" src="assets/icon-spark.svg" alt="icon"></span><span class="content-title-inner yellow">Revolutionizing</span><span class="content-title-inner">The stock image</span><span class="content-title-inner">Industry<img class="span-img-people" src="assets/img-people.png" alt="images"></span><span class="content-title-inner">With Generative AI</span></h1>
+            <div class="search-container" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"> 
               <input class="search-input" type="text" placeholder="Search...">
               <button class="search-button"><img class="icon-search" src="assets/icon-search.svg" alt="icon-search"></button>
             </div>
-            <p class="content-description">Our platform offers a continuously growing collection of AI-created images designed to fulfill the varied and changing requirements of artists, advertisers, and companies worldwide. If you need original visuals for a project or ideas for your next marketing strategy, our AI-powered collection provides limitless options at your disposal.</p>
+            <p class="content-description" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"> Our platform offers a continuously growing collection of AI-created images designed to fulfill the varied and changing requirements of artists, advertisers, and companies worldwide. If you need original visuals for a project or ideas for your next marketing strategy, our AI-powered collection provides limitless options at your disposal.</p>
           </div>
-          <div class="content"><img class="content-img" src="assets/image-header.webp" alt="header-img"></div>
+          <div class="content"><img class="content-img" src="assets/image-header.webp" alt="header-img" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true"></div>
         </div>
       </div>
     </div>
     <div class="section sec-porto">
       <div class="container con-porto">
         <div class="frame-porto">
-          <div class="frame-porto-card">
+          <div class="frame-porto-card" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
             <div class="card-porto-head">
               <h1>25</h1><img src="assets/icon-porto-1.svg" alt="icon-porto">
             </div><span class="card-porto-body">Curated categories</span>
           </div>
-          <div class="frame-porto-card">
+          <div class="frame-porto-card" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
             <div class="card-porto-head">
               <h1>>100k</h1><img src="assets/icon-porto-2.svg" alt="icon-porto">
             </div>
             <div class="card-porto-body">hand-picked assets</div>
           </div>
-          <div class="frame-porto-card">
+          <div class="frame-porto-card" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
             <div class="card-porto-head">
               <h1>1000+</h1><img src="assets/icon-porto-3.svg" alt="icon-porto">
             </div><span class="card-porto-body">new assets every day</span>
@@ -65,8 +74,8 @@
     </div>
     <div class="section sec-gallery">
       <div class="container con-gallery">
-        <div class="gallery-content"><span class="gallery-content-span">Our gallery</span>
-          <h2 class="gallery-content-title">See our gallery</h2>
+        <div class="gallery-content"><span class="gallery-content-span" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Our gallery</span>
+          <h2 class="gallery-content-title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">See our gallery</h2>
         </div>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -91,10 +100,10 @@
       <div class="container con-choose">
         <div class="choose-content">
           <div class="choose-content-title">
-            <div class="grid-choose"><span>Why Choose AI-Generated Images?</span>
+            <div class="grid-choose"><span data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Why Choose AI-Generated Images?</span>
               <div class="grid-choose-text">
-                <h1>Our AI-generated images stand out because of their uniqueness, creativity, and limitless variety.</h1>
-                <p>No longer constrained by the boundaries of traditional stock libraries, our images are crafted from complex AI models that ensure each one is distinct and original. This innovative approach means you can find images that perfectly capture your vision without the fear of redundancy or copyright issues. </p>
+                <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Our AI-generated images stand out because of their uniqueness, creativity, and limitless variety.</h1>
+                <p data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">No longer constrained by the boundaries of traditional stock libraries, our images are crafted from complex AI models that ensure each one is distinct and original. This innovative approach means you can find images that perfectly capture your vision without the fear of redundancy or copyright issues. </p>
               </div>
               <div class="choose-button">
                 <div class="choose-button-prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -110,27 +119,27 @@
           </div>
           <div class="choose-content-image">
             <div class="grid-choose-image">
-              <div class="grid-choose-image-span"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <div class="grid-choose-image-span" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
 <path d="M7.08182 2.15579C7.48163 1.43479 8.51837 1.43479 8.91818 2.15579C9.20627 2.67532 9.86767 2.85255 10.3769 2.54666C11.0837 2.12217 11.9815 2.64054 11.9673 3.46484C11.957 4.05882 12.4412 4.543 13.0352 4.53273C13.8595 4.51848 14.3778 5.41632 13.9533 6.12306C13.6475 6.63233 13.8247 7.29373 14.3442 7.58182C15.0652 7.98163 15.0652 9.01837 14.3442 9.41818C13.8247 9.70627 13.6475 10.3677 13.9533 10.8769C14.3778 11.5837 13.8595 12.4815 13.0352 12.4673C12.4412 12.457 11.957 12.9412 11.9673 13.5352C11.9815 14.3595 11.0837 14.8778 10.3769 14.4533C9.86767 14.1475 9.20627 14.3247 8.91818 14.8442C8.51837 15.5652 7.48163 15.5652 7.08182 14.8442C6.79373 14.3247 6.13233 14.1475 5.62306 14.4533C4.91632 14.8778 4.01848 14.3595 4.03273 13.5352C4.043 12.9412 3.55882 12.457 2.96484 12.4673C2.14054 12.4815 1.62217 11.5837 2.04666 10.8769C2.35255 10.3677 2.17532 9.70627 1.65579 9.41818C0.934793 9.01837 0.934793 7.98163 1.65579 7.58182C2.17532 7.29373 2.35255 6.63233 2.04666 6.12306C1.62217 5.41632 2.14054 4.51848 2.96484 4.53273C3.55882 4.543 4.043 4.05882 4.03273 3.46484C4.01848 2.64054 4.91632 2.12217 5.62306 2.54666C6.13233 2.85255 6.79373 2.67532 7.08182 2.15579Z" fill="white" stroke="black"/>
 <path d="M7.65568 6.12092C7.80561 5.85055 8.19439 5.85055 8.34432 6.12092C8.45235 6.31575 8.70038 6.3822 8.89135 6.2675C9.15638 6.10831 9.49307 6.3027 9.48773 6.61181C9.48388 6.83456 9.66544 7.01612 9.88819 7.01227C10.1973 7.00693 10.3917 7.34362 10.2325 7.60865C10.1178 7.79962 10.1843 8.04765 10.3791 8.15568C10.6495 8.30561 10.6495 8.69439 10.3791 8.84432C10.1843 8.95235 10.1178 9.20038 10.2325 9.39135C10.3917 9.65638 10.1973 9.99307 9.88819 9.98773C9.66544 9.98388 9.48388 10.1654 9.48773 10.3882C9.49307 10.6973 9.15638 10.8917 8.89135 10.7325C8.70038 10.6178 8.45235 10.6843 8.34432 10.8791C8.19439 11.1495 7.80561 11.1495 7.65568 10.8791C7.54765 10.6843 7.29962 10.6178 7.10865 10.7325C6.84362 10.8917 6.50693 10.6973 6.51227 10.3882C6.51612 10.1654 6.33456 9.98388 6.11181 9.98773C5.8027 9.99307 5.60831 9.65638 5.7675 9.39135C5.8822 9.20038 5.81575 8.95235 5.62092 8.84432C5.35055 8.69439 5.35055 8.30561 5.62092 8.15568C5.81575 8.04765 5.8822 7.79962 5.7675 7.60865C5.60831 7.34362 5.8027 7.00693 6.11181 7.01227C6.33456 7.01612 6.51612 6.83456 6.51227 6.61181C6.50693 6.3027 6.84362 6.10831 7.10865 6.2675C7.29962 6.3822 7.54765 6.31575 7.65568 6.12092Z" fill="black"/>
 </svg><span>our categories</span>
               </div>
               <div class="grid-choose-image-content">
-                <div class="card-content-choose">
+                <div class="card-content-choose" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
                   <div class="float-link-choose"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                   </div><img class="card-content-choose-image" src="assets/img-categories-1.png" alt="image">
                   <div class="card-content-choose-text"><span>Abstract</span></div>
                 </div>
-                <div class="card-content-choose">
+                <div class="card-content-choose" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
                   <div class="float-link-choose"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                   </div><img class="card-content-choose-image" src="assets/img-categories-2.png" alt="image">
                   <div class="card-content-choose-text"><span>Agriculture and Farming</span></div>
                 </div>
-                <div class="card-content-choose">
+                <div class="card-content-choose" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
                   <div class="float-link-choose"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -146,26 +155,26 @@
     <section class="section sec-core-value">
       <div class="container con-core-value">
         <div class="core-value-content"> 
-          <div class="content-top"> <span>Our Core Values</span>
-            <h3>We are acutely aware of the ethical implications of AI, which is why we uphold the highest standards in all our operations</h3>
+          <div class="content-top"> <span data-aos="fade-up" data-aos-once="true">Our Core Values</span>
+            <h3 data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">We are acutely aware of the ethical implications of AI, which is why we uphold the highest standards in all our operations</h3>
           </div>
           <ul class="content-bottom"> 
-            <li>
+            <li data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.5 12C9.768 12 12.5 9.363 12.5 3C12.5 9.363 15.213 12 21.5 12C15.213 12 12.5 14.713 12.5 21C12.5 14.713 9.768 12 3.5 12Z" fill="#2B65F4" stroke="#2B65F4" stroke-width="1.5" stroke-linejoin="round"/>
 </svg><span>Ethical implications of</span>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.5 12C9.768 12 12.5 9.363 12.5 3C12.5 9.363 15.213 12 21.5 12C15.213 12 12.5 14.713 12.5 21C12.5 14.713 9.768 12 3.5 12Z" fill="#2B65F4" stroke="#2B65F4" stroke-width="1.5" stroke-linejoin="round"/>
 </svg><span>Highest Standards </span>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.5 12C9.768 12 12.5 9.363 12.5 3C12.5 9.363 15.213 12 21.5 12C15.213 12 12.5 14.713 12.5 21C12.5 14.713 9.768 12 3.5 12Z" fill="#2B65F4" stroke="#2B65F4" stroke-width="1.5" stroke-linejoin="round"/>
 </svg><span>Respectful </span>
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="2500" data-aos-once="true">
                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.5 12C9.768 12 12.5 9.363 12.5 3C12.5 9.363 15.213 12 21.5 12C15.213 12 12.5 14.713 12.5 21C12.5 14.713 9.768 12 3.5 12Z" fill="#2B65F4" stroke="#2B65F4" stroke-width="1.5" stroke-linejoin="round"/>
 </svg><span>intentionally crafted </span>
@@ -177,20 +186,20 @@
     <div class="section sec-curated">
       <div class="container con-curated">
         <div class="curated-content">
-          <div class="curated-content-title"><span>Curated Content</span>
-            <h1>Each image on Aimaget.com is more than just a digital asset</h1>
-            <p>We take great pride in our commitment to ethically and responsibly created content, spending countless hours curating and refining our collection to ensure each image meets our high standards. Our promise is to provide authenticity and integrity on our platform.</p>
+          <div class="curated-content-title"><span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"> Curated Content</span>
+            <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"> Each image on Aimaget.com is more than just a digital asset</h1>
+            <p data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"> We take great pride in our commitment to ethically and responsibly created content, spending countless hours curating and refining our collection to ensure each image meets our high standards. Our promise is to provide authenticity and integrity on our platform.</p>
           </div>
-          <div class="curated-content-image"><img class="image-curated" src="assets/img-curated-content.png" alt="icon-porto"></div>
+          <div class="curated-content-image" data-aos="fade-up" data-aos-duration="2500" data-aos-once="true"> <img class="image-curated" src="assets/img-curated-content.png" alt="icon-porto"></div>
         </div>
       </div>
     </div>
     <div class="section sec-mind">
       <div class="container con-mind">
         <div class="mind-content">
-          <div class="mind-content-title"><span>Meet the Minds Behind Aimaget</span>
-            <h1>Aimaget.com is the brainchild of two passionate innovators</h1>
-            <p>Lukasz and Daniel, whose combined expertise in technology and art laid the groundwork for this revolutionary platform. Daniel, a seasoned programmer with a flair for creativity, and Lukasz, an accomplished digital artist with an eye for detail, joined forces to bridge the gap between technology and art. Our journey started as a passion project born out of late-night brainstorming sessions and countless cups of coffee. Armed with nothing but a shared vision and a deep commitment to AI technology and creativity, we transformed this idea into a one-of-a-kind platform just for you.</p>
+          <div class="mind-content-title"><span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"> Meet the Minds Behind Aimaget</span>
+            <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"> Aimaget.com is the brainchild of two passionate innovators</h1>
+            <p data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"> Lukasz and Daniel, whose combined expertise in technology and art laid the groundwork for this revolutionary platform. Daniel, a seasoned programmer with a flair for creativity, and Lukasz, an accomplished digital artist with an eye for detail, joined forces to bridge the gap between technology and art. Our journey started as a passion project born out of late-night brainstorming sessions and countless cups of coffee. Armed with nothing but a shared vision and a deep commitment to AI technology and creativity, we transformed this idea into a one-of-a-kind platform just for you.</p>
           </div>
           <div class="mind-content-image"><img class="image-mind" src="assets/img-minds.png" alt="image-mind"></div>
         </div>
@@ -199,14 +208,14 @@
     <div class="section sec-vision">
       <div class="container con-vision">
         <div class="vision-content">
-          <div class="vision-content-title"><span>Our vision and mission</span>
-            <h1>Our mission is to make extraordinary imagery accessible to everyone, empowering creatives, designers, and marketers with fresh and innovative visual options.</h1>
+          <div class="vision-content-title"><span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"> Our vision and mission</span>
+            <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"> Our mission is to make extraordinary imagery accessible to everyone, empowering creatives, designers, and marketers with fresh and innovative visual options.</h1>
           </div>
           <div class="vision-content-image">
             <div class="image-layout">
               <div class="image-layout-img"><img class="image-vison" src="assets/img-ourvision.png" alt="icon-porto"></div>
               <div class="image-layout-text">
-                <h1>Our commitment is to use the potential of AI ethically and responsibly, offering imagery that reflects the intricate tapestry of the world around us.</h1><span>At Aimaget.com, we are deeply committed to understanding the evolving landscape of creative workflows shaped by Generative AI.</span><span>We imagine a future in which AI plays a crucial role in the creative process, expanding the boundaries of art while preserving its essential beauty.</span>
+                <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"> Our commitment is to use the potential of AI ethically and responsibly, offering imagery that reflects the intricate tapestry of the world around us.</h1><span data-aos="fade-up" data-aos-duration="2500" data-aos-once="true"> At Aimaget.com, we are deeply committed to understanding the evolving landscape of creative workflows shaped by Generative AI.</span><span data-aos="fade-up" data-aos-duration="3000" data-aos-once="true"> We imagine a future in which AI plays a crucial role in the creative process, expanding the boundaries of art while preserving its essential beauty.</span>
               </div>
             </div>
           </div>
@@ -215,18 +224,18 @@
     </div>
     <section class="section sec-join-us"> 
       <div class="container con-join-us"> 
-        <div class="join-us-content"><span>Join Us on Our Journey</span>
-          <h3>We invite you to explore Aimaget.com and discover the magic of AI-generated imagery.</h3>
-          <p>Whether you're looking for inspiration or the perfect visual for your next project, we're here to support your creative journey every step of the way. We're incredibly grateful to our community of users and supporters who have been instrumental in our growth—without you, none of this would be possible</p><a class="btn btn-white" href="#">Product </a>
+        <div class="join-us-content"><span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"> Join Us on Our Journey</span>
+          <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"> We invite you to explore Aimaget.com and discover the magic of AI-generated imagery.</h3>
+          <p data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"> Whether you're looking for inspiration or the perfect visual for your next project, we're here to support your creative journey every step of the way. We're incredibly grateful to our community of users and supporters who have been instrumental in our growth—without you, none of this would be possible</p><a class="btn btn-white" href="#">Product </a>
         </div>
       </div>
     </section>
     <div class="section sec-pricing">
       <div class="container con-pricing">
         <div class="pricing-content">
-          <div class="pricing-content-title"><span>PRICING</span>
-            <h1>Plans for Stock Images</h1>
-            <p>Get the ideal plan for your projects</p>
+          <div class="pricing-content-title"><span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"> PRICING</span>
+            <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"> Plans for Stock Images</h1>
+            <p data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"> Get the ideal plan for your projects</p>
           </div>
           <div class="pricing-content-tabs">
             <div class="tab-container">
@@ -395,8 +404,8 @@
     </div>
     <div class="section sec-faq">
       <div class="container con-faq">
-        <div class="faq-title"><span>faq</span>
-          <h1>Lorem ipsum dolor sit amet</h1>
+        <div class="faq-title"><span data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"> faq</span>
+          <h1 data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"> Lorem ipsum dolor sit amet</h1>
         </div>
         <div class="faq-container">
           <div class="faq-item">

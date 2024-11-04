@@ -43,6 +43,24 @@
                     box-shadow: 0 0 0 1px #000
         .navbar-humburger
                 display: none
+                width: 24px
+                height: 24px
+                position: relative
+                .humb-icon, .cross-icon
+                    position: absolute
+                    width: 24px
+                    height: 24px
+                .humb-icon
+                    display: block
+                .cross-icon
+                    display: none
+.close
+    .humb-icon
+        display: none!important
+    .cross-icon
+        display: block!important
+        position: fixed !important
+                
 
 
 @media only screen and (max-width: 600px)
@@ -63,11 +81,17 @@
         gap: 15px
         position: fixed
         top: 0
+        left: 0
         background-color: #fff
         padding: 15px
         width: 100%!important
         height: 100%!important
         z-index: 2
         .menus-navbar-menus
+            margin-top: 80px!important
             display: flex!important
             flex-direction: column!important
+            .link-menu
+                padding: 20px 0
+                font-size: 24px
+

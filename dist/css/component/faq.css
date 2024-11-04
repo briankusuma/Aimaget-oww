@@ -98,6 +98,10 @@
   .faq-question {
     font-size: 18px !important;
   }
+  .faq-question span {
+    max-width: 290px !important;
+    width: 100%;
+  }
   .faq-answer {
     font-size: 14px !important;
   }

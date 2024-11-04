@@ -73,6 +73,9 @@
   justify-content: center;
   cursor: pointer;
 }
+.sec-choose .con-choose .choose-content .choose-content-title .grid-choose .choose-button-next:hover, .sec-choose .con-choose .choose-content .choose-content-title .grid-choose .choose-button-prev:hover {
+  border: 1px solid #000;
+}
 .sec-choose .con-choose .choose-content .choose-content-image {
   margin-top: 57px;
 }
@@ -124,6 +127,10 @@
   position: absolute;
   right: 20px;
   top: 20px;
+  cursor: pointer;
+}
+.sec-choose .con-choose .choose-content .choose-content-image .grid-choose-image-content .card-content-choose .float-link-choose:hover {
+  transform: rotate(45deg);
 }
 .sec-choose .con-choose .choose-content .choose-content-image .grid-choose-image-content .card-content-choose-image {
   width: 310px;
