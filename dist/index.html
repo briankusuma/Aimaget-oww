@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.36/build/spline-viewer.js"></script>
   </head>
   <body>
     <div class="section sec-navbar">
@@ -213,7 +214,11 @@
           </div>
           <div class="vision-content-image">
             <div class="image-layout">
-              <div class="image-layout-img"><img class="image-vison" src="assets/img-ourvision.png" alt="icon-porto"></div>
+              <div class="image-layout-img"><img class="image-vison" src="assets/image-vision.png" alt="icon-vision">
+                <div class="img-animate">
+                  <spline-viewer url="https://prod.spline.design/VfACJm4mYJYATXFW/scene.splinecode"></spline-viewer>
+                </div>
+              </div>
               <div class="image-layout-text">
                 <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"> Our commitment is to use the potential of AI ethically and responsibly, offering imagery that reflects the intricate tapestry of the world around us.</h1><span data-aos="fade-up" data-aos-duration="2500" data-aos-once="true"> At Aimaget.com, we are deeply committed to understanding the evolving landscape of creative workflows shaped by Generative AI.</span><span data-aos="fade-up" data-aos-duration="3000" data-aos-once="true"> We imagine a future in which AI plays a crucial role in the creative process, expanding the boundaries of art while preserving its essential beauty.</span>
               </div>
@@ -470,5 +475,6 @@
       </div>
     </footer>
     <script src="js/app.js"></script>
+    <script src="js/pricing.js"></script>
   </body>
 </html>

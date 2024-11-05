@@ -38,15 +38,26 @@
                 justify-content: center
                 align-content: center
                 margin-top: 50px
+                
                 .image-layout
                     display: flex
                     align-items: center
                     justify-content: center
                     flex-direction: row
+                    gap: 190px
                     &-img
+                        position: relative
                         img
                             width: 100%
-                            max-width: 614px
+                            max-width: 505px
+                    .img-animate
+                        width: 224px
+                        height: 224px
+                        border-radius: 100%
+                        position: absolute
+                        top: 40px
+                        right: -120px
+                        overflow: hidden
                     &-text
                         display: flex
                         align-items: center
@@ -74,9 +85,15 @@
                             letter-spacing: 0.32px
                             margin-block: 30px
                             padding-left: 45px
+
 @media only screen and (max-width: 600px)
     .image-layout
         flex-direction: column!important
+        .img-animate
+            bottom: -120px!important
+            right: auto!important
+            top: auto!important
+            left: 60px!important
     .image-layout-text
         h1, span
             padding-left: 14px!important

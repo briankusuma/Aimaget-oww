@@ -47,10 +47,23 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  gap: 190px;
+}
+.sec-vision .con-vision .vision-content-image .image-layout-img {
+  position: relative;
 }
 .sec-vision .con-vision .vision-content-image .image-layout-img img {
   width: 100%;
-  max-width: 614px;
+  max-width: 505px;
+}
+.sec-vision .con-vision .vision-content-image .image-layout .img-animate {
+  width: 224px;
+  height: 224px;
+  border-radius: 100%;
+  position: absolute;
+  top: 40px;
+  right: -120px;
+  overflow: hidden;
 }
 .sec-vision .con-vision .vision-content-image .image-layout-text {
   display: flex;
@@ -86,6 +99,12 @@
 @media only screen and (max-width: 600px) {
   .image-layout {
     flex-direction: column !important;
+  }
+  .image-layout .img-animate {
+    bottom: -120px !important;
+    right: auto !important;
+    top: auto !important;
+    left: 60px !important;
   }
   .image-layout-text h1, .image-layout-text span {
     padding-left: 14px !important;
