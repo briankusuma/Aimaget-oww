@@ -1086,7 +1086,7 @@
   margin-bottom: 10px;
   border-radius: 24px;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card span {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card span, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-header {
   color: #F68325;
   font-size: 24px;
   font-style: normal;
@@ -1095,7 +1095,7 @@
   letter-spacing: -0.48px;
   text-transform: capitalize;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card h3 {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card h3, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .price {
   color: #000;
   font-size: 40px;
   font-style: normal;
@@ -1105,30 +1105,38 @@
   text-transform: capitalize;
   margin-top: 24px;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .features {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
   margin-top: 40px;
   height: 250px;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list-item {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list-item, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .features-item {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list span {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list span,
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list .features,
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-list li, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .features span,
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .features .features,
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .features li {
   color: #3D3629;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 156%;
   letter-spacing: 0.32px;
+  width: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .credit-options, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1137,26 +1145,27 @@
   padding: 5px;
   margin: 30px 0 20px 0;
   cursor: pointer;
+  gap: 5px;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits-opsi {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .credit-options-opsi, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .credit-options .credit-option-button, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits-opsi, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits .credit-option-button {
   padding: 16px 36px;
-}
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits-opsi span {
+  border-color: transparent !important;
+  border-radius: 100%;
+  background: #EEF0F6;
   color: #000;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
+  cursor: pointer;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits-opsi:hover span {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .credit-options-opsi:hover, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .credit-options .credit-option-button:hover, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits-opsi:hover, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits .credit-option-button:hover {
   color: #2B65F4;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits .active {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .credit-options .activeC, .sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits .activeC {
   border-radius: 32px;
   background: #FFF;
   box-shadow: 1px 1.5px 6px 0px rgba(0, 0, 0, 0.12);
-}
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-credits .active span {
   color: #2B65F4;
   font-size: 16px;
   font-style: normal;
@@ -1171,16 +1180,31 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-subscribe span {
   color: #2B65F4;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
+  width: 100%;
+  border-color: transparent !important;
 }
-.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-subscribe:hover span {
+.sec-pricing .con-pricing .pricing-content-tabs .tab-container .content-container .card .card-subscribe:hover {
   color: #000;
+}
+
+#cards-tab-0,
+#cards-tab-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+#cards-tab-0 li,
+#cards-tab-1 li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1190,7 +1214,7 @@
     align-items: center;
     gap: 30px;
   }
-  .card-credits-opsi {
+  .card-credits-opsi, .credit-option-button {
     padding: 12px 20px !important;
   }
   .card-list-item span {
@@ -1201,13 +1225,29 @@
     margin-top: 32px !important;
   }
   .card {
-    padding: 24px 14px !important;
+    padding: 24px 5px !important;
   }
   .card h3 {
     margin-top: 12px !important;
   }
   .con-pricing {
     padding-block: 32px !important;
+  }
+  #cards-tab-0,
+  #cards-tab-1 {
+    flex-direction: column !important;
+    gap: 30px;
+  }
+  #cards-tab-0 li,
+  #cards-tab-1 li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  .features {
+    height: 350px !important;
   }
 }
 .sec-choose {
