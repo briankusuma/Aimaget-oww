@@ -17,7 +17,7 @@ var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     coverflowEffect: {
         rotate: 50,
-        stretch: -100,
+        stretch: -80,
         depth: 200,
         modifier: 0.4,
         slideShadows: false,
@@ -28,6 +28,10 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         // When window width is >= 640px (mobile view)
+        360: {
+            slidesPerView: 3, // Show 3 slides per view on mobile
+            
+        },
         414: {
             slidesPerView: 3, // Show 3 slides per view on mobile
             

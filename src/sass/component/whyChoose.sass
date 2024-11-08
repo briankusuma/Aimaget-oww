@@ -93,11 +93,16 @@
                             text-transform: uppercase
                             max-width: 209px
                     &-content
-                        display: grid
-                        grid-template-columns: repeat(3, 1fr)
-                        grid-template-rows: 1fr
-                        grid-column-gap: 30px
-                        grid-row-gap: 20px
+                        // display: grid
+                        // grid-template-columns: repeat(3, 1fr)
+                        // grid-template-rows: 1fr
+                        // grid-column-gap: 30px
+                        // grid-row-gap: 20px
+                        display: flex
+                        flex-direction: row
+                        align-items: center
+                        gap: 30px
+                        flex-wrap: wrap
                         .card-content-choose
                             border-radius: 24px
                             background: #F7F8FB
@@ -138,3 +143,9 @@
     .grid-choose-image-content
         display: flex!important
         flex-direction: column!important
+    .con-choose
+        padding-inline: 10px!important
+
+    .choose-content-image 
+        display: flex!important
+        justify-content: center!important
