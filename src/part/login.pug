@@ -8,16 +8,20 @@
                     .form-content-title
                         h1 Log in to Aimaget
                         span Don't have an account yet?
-                            span Create new Account
+                            a Create new Account
                     .form-button-link
-                        button google
-                        button facebook
+                        button
+                            img(src="/assets/ic-google.svg" alt="icon Image")
+                            span Log in with Google
+                        button
+                            img(src="/assets/ic-facebook.svg" alt="icon Image")
+                            span Log in with Facebook
                     .form-sparator
                         .line-sparator
                         span Or log in with
                         .line-sparator
                     form
-                        input.input-form(type="text" placeholder="email")
+                        input.input-form(type="text" placeholder="Email or mobile phone number")
                         input.input-form(type="text" placeholder="password")
                         span Forgot Password?
-                        button.button-input(type="input") login
+                        button.button-input(type="input") Sign In

@@ -1,3 +1,30 @@
-.section.sec-signup
-    .container.con-signup
-        h1 hallo signup
+.section.sec-login
+    .container.con-login
+        .frame-content-regis
+            .content-image-regis
+                img(src="/assets/img-registration.png" alt="Login Image").img-regis
+            .content-form-regis
+                .form-content-regis
+                    .form-content-title
+                        h1 Sign up now
+                        span Already have an account?
+                            a Sign in
+                    .form-button-link
+                        button
+                            img(src="/assets/ic-google.svg" alt="icon Image")
+                            span Sign up with Google
+                        button
+                            img(src="/assets/ic-facebook.svg" alt="icon Image")
+                            span Sign up with Facebook
+                    .form-sparator
+                        .line-sparator
+                        span Or sign up with
+                        .line-sparator
+                    form
+                        input.input-form(type="text" placeholder="Email or mobile phone number")
+                        layout-input
+                        .phone-container
+                            input#phone.phone-input(type="tel" placeholder="Mobile phone number")
+                        button.button-input(type="input") Sign Up
+                    p
+                        By clicking Sign Up, you agree to our Terms & Conditions, Telehealth Consent and Privacy Policy. You may receive SMS Notifications from us and can opt out any time. You can contact us directly to opt out of any SMS notifications before registration.

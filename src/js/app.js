@@ -43,6 +43,8 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+
+
 // faq logic
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.faq-question').forEach((question) => {
