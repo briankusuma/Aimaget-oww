@@ -1566,17 +1566,21 @@
   justify-content: space-between;
 }
 .sec-login .con-login .frame-content-regis .content-image-regis {
-  width: 650px;
+  width: 42vw;
   height: auto;
   margin: -20px;
+  left: -2vw;
+  position: absolute;
+  left: 0;
 }
 .sec-login .con-login .frame-content-regis .content-image-regis .img-regis {
-  width: 600px;
-  height: 740px;
-  transform: scale(1.1);
+  width: 40vw;
+  height: auto;
+  transform: scale(1.14);
 }
 .sec-login .con-login .frame-content-regis .content-form-regis {
   padding: 24px;
+  margin-left: auto;
 }
 .sec-login .con-login .frame-content-regis .content-form-regis .form-content-regis {
   border-radius: 24px;
@@ -1776,11 +1780,15 @@
     margin: auto !important;
     margin-top: 30px;
     width: 100% !important;
+    position: relative !important;
   }
   .content-image-regis .img-regis {
     width: 100% !important;
     height: auto !important;
     transform: unset !important;
+  }
+  .content-form-regis {
+    margin-left: unset !important;
   }
   .content-form-regis .form-content-regis {
     width: 100%;
@@ -1800,6 +1808,7 @@
     margin: auto !important;
     padding-top: 10px;
     width: 100% !important;
+    position: relative !important;
   }
   .content-image-regis .img-regis {
     width: 100% !important;
@@ -1808,6 +1817,7 @@
   }
   .content-form-regis {
     padding: 24px 0 !important;
+    margin-left: unset !important;
   }
   .content-form-regis .form-content-regis {
     width: 100%;
@@ -1849,6 +1859,9 @@
   }
 }
 @media only screen and (width: 912px) {
+  .content-image-regis {
+    position: relative !important;
+  }
   .phone-container .phone-input {
     max-width: 670px !important;
     left: 130px !important;
@@ -1859,6 +1872,12 @@
   }
 }
 @media only screen and (width: 540px) {
+  .content-form-regis {
+    margin-left: unset !important;
+  }
+  .content-image-regis {
+    position: relative !important;
+  }
   .phone-container .phone-input {
     max-width: 355px !important;
     left: 130px !important;
@@ -1869,6 +1888,12 @@
   }
 }
 @media only screen and (width: 360px) {
+  .content-form-regis {
+    margin-left: unset !important;
+  }
+  .content-image-regis {
+    position: relative !important;
+  }
   .phone-container .phone-input {
     max-width: 180px !important;
     left: 130px !important;
