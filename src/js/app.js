@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
     grabCursor: true,
     centeredSlides: true,
     // slidesPerView: 5,
-    // autoplay: true,
+    autoplay: true,
     loop: true,
     effect: "coverflow",
     coverflowEffect: {
