@@ -43,6 +43,51 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+    // // slider logic whychoose
+    // const slider = new Swiper('.slide-card', {
+    //     slidesPerView: 1,
+    //     spaceBetween: 10,
+    //     centeredSlides: true,
+    //     loop: true,
+    //     autoplay: true,
+    //     navigation: {
+    //         nextEl: '.choose-button-next',
+    //         prevEl: '.choose-button-prev',
+    //     },
+    //     // Nonaktifkan pagination
+    //     pagination: false,
+    //     // Custom selectors
+    //     wrapperClass: 'custom-wrapper',
+    //     slideClass: 'custom-slide',
+    // });
+    // console.log(slider)
+    document.addEventListener('DOMContentLoaded', function () {
+        var prevButton = document.querySelector('#btn-prev');
+        var nextButton = document.querySelector('#btn-next');
+
+        var splide = new Splide('#carousel', {
+            type       : 'loop',
+            autoplay  : true,
+            pagination: false,
+            autoWidth: true,
+            arrows    : false,
+            gap: "30px",
+            breakpoints: {
+                640: {
+                    autoWidth: true
+                }
+            }
+        });
+            prevButton.addEventListener('click', function () {
+                splide.go('<');
+            });
+        
+            nextButton.addEventListener('click', function () {
+                    splide.go('>');
+            });
+
+        splide.mount();
+    });
 
 
 // faq logic

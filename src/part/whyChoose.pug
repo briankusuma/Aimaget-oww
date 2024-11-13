@@ -14,11 +14,11 @@
                         data-aos-duration="2500"
                         data-aos-once="true") No longer constrained by the boundaries of traditional stock libraries, our images are crafted from complex AI models that ensure each one is distinct and original. This innovative approach means you can find images that perfectly capture your vision without the fear of redundancy or copyright issues. 
                     .choose-button
-                        .choose-button-prev
+                        button#btn-prev.choose-button-prev
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M14 7L9 12L14 17" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        .choose-button-next
+                        button#btn-next.choose-button-next
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M10 7L15 12L10 17" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -33,35 +33,78 @@
                         </svg>
                         span our categories
                     .grid-choose-image-content
-                        .card-content-choose(data-aos="fade-up"
-                    data-aos-duration="1500"
-                    data-aos-once="true")
-                            .float-link-choose
-                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                                    <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            img(src="assets/img-categories-1.png" alt="image").card-content-choose-image
-                            .card-content-choose-text
-                                span Abstract
+                        //- .card-content-choose
+                        //-     .float-link-choose
+                        //-         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        //-             <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        //-         </svg>
+                        //-     img(src="assets/img-categories-1.png" alt="image").card-content-choose-image
+                        //-     .card-content-choose-text
+                        //-         span Abstract
                         
-                        .card-content-choose(data-aos="fade-up"
-                    data-aos-duration="2500"
-                    data-aos-once="true")
-                            .float-link-choose
-                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                                    <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            img(src="assets/img-categories-2.png" alt="image").card-content-choose-image
-                            .card-content-choose-text
-                                span Agriculture and Farming
+                        //- .card-content-choose
+                        //-     .float-link-choose
+                        //-         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        //-             <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        //-         </svg>
+                        //-     img(src="assets/img-categories-2.png" alt="image").card-content-choose-image
+                        //-     .card-content-choose-text
+                        //-         span Agriculture and Farming
 
-                        .card-content-choose(data-aos="fade-up"
-                    data-aos-duration="1500"
-                    data-aos-once="true")
-                            .float-link-choose
-                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                                    <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            img(src="assets/img-categories-3.png" alt="image").card-content-choose-image
-                            .card-content-choose-text
-                                span Sports and Recreation
+                        //- .card-content-choose
+                        //-     .float-link-choose
+                        //-         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        //-             <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        //-         </svg>
+                        //-     img(src="assets/img-categories-3.png" alt="image").card-content-choose-image
+                        //-     .card-content-choose-text
+                        //-         span Sports and Recreation
+
+                        #carousel.splide
+                            .splide__track
+                                ul.splide__list
+                                    li.splide__slide
+                                        .card-content-choose
+                                            .float-link-choose
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                                    <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            img(src="assets/img-categories-1.png" alt="image").card-content-choose-image
+                                            .card-content-choose-text
+                                                span Abstract
+                                    li.splide__slide
+                                        .card-content-choose
+                                            .float-link-choose
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                                    <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            img(src="assets/img-categories-2.png" alt="image").card-content-choose-image
+                                            .card-content-choose-text
+                                                span Agriculture and Farming
+                                    li.splide__slide
+                                        .card-content-choose
+                                            .float-link-choose
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                                    <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            img(src="assets/img-categories-3.png" alt="image").card-content-choose-image
+                                            .card-content-choose-text
+                                                span Sports and Recreation
+                                    li.splide__slide
+                                        .card-content-choose
+                                            .float-link-choose
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                                    <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            img(src="assets/img-categories-4.png" alt="image").card-content-choose-image
+                                            .card-content-choose-text
+                                                span Transportation
+                                    li.splide__slide
+                                        .card-content-choose
+                                            .float-link-choose
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                                    <path d="M10.8614 23.5824L23.1374 10.4181M23.1374 10.4181L23.5569 22.4316M23.1374 10.4181L11.1239 10.8376" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            img(src="assets/img-categories-5.png" alt="image").card-content-choose-image
+                                            .card-content-choose-text
+                                                span Technology

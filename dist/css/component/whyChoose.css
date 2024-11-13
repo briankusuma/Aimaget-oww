@@ -86,12 +86,14 @@
   grid-column-gap: 0px;
   grid-row-gap: 20px;
   align-items: start;
+  overflow: hidden;
 }
 .sec-choose .con-choose .choose-content .choose-content-image .grid-choose-image-span {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  width: 255px;
 }
 .sec-choose .con-choose .choose-content .choose-content-image .grid-choose-image-span span {
   color: #F68325;
@@ -105,16 +107,16 @@
 }
 .sec-choose .con-choose .choose-content .choose-content-image .grid-choose-image-content {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
 }
 .sec-choose .con-choose .choose-content .choose-content-image .grid-choose-image-content .card-content-choose {
   border-radius: 24px;
   background: #F7F8FB;
   padding: 8px;
   position: relative;
+  width: 326px;
+  height: 400px;
 }
 .sec-choose .con-choose .choose-content .choose-content-image .grid-choose-image-content .card-content-choose .float-link-choose {
   width: 56px;
@@ -151,6 +153,15 @@
   display: flex;
 }
 
+.splide__slide {
+  height: 400px;
+}
+
+.splide__track ul {
+  display: flex;
+  flex-direction: row;
+}
+
 @media only screen and (max-width: 600px) {
   .grid-choose,
   .grid-choose-image,
@@ -164,5 +175,9 @@
   .choose-content-image {
     display: flex !important;
     justify-content: center !important;
+  }
+  .splide__track ul {
+    display: flex !important;
+    flex-direction: row !important;
   }
 }

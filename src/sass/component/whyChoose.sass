@@ -78,11 +78,13 @@
                     grid-column-gap: 0px
                     grid-row-gap: 20px
                     align-items: start
+                    overflow: hidden
                     &-span
                         display: flex
                         flex-direction: row
                         align-items: center
                         gap: 30px
+                        width: 255px
                         span
                             color: #F68325
                             font-size: 16px
@@ -98,16 +100,21 @@
                         // grid-template-rows: 1fr
                         // grid-column-gap: 30px
                         // grid-row-gap: 20px
+                        // display: flex
+                        // flex-direction: row
+                        // align-items: center
+                        // gap: 30px
+                        // flex-wrap: wrap
                         display: flex
-                        flex-direction: row
+                        justify-content: center
                         align-items: center
-                        gap: 30px
-                        flex-wrap: wrap
                         .card-content-choose
                             border-radius: 24px
                             background: #F7F8FB
                             padding: 8px
                             position: relative
+                            width: 326px
+                            height: 400px
                             .float-link-choose
                                 width: 56px
                                 height: 56px
@@ -137,6 +144,14 @@
                                     max-width: 248px
                                     width: 100%
                                     display: flex
+
+.splide__slide 
+    height: 400px
+.splide__track
+    ul
+        display: flex
+        flex-direction: row
+
 @media only screen and (max-width: 600px)
     .grid-choose,
     .grid-choose-image,
@@ -149,3 +164,7 @@
     .choose-content-image 
         display: flex!important
         justify-content: center!important
+    .splide__track
+        ul
+            display: flex!important
+            flex-direction: row!important
